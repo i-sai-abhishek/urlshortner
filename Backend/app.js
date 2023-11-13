@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
+/*
 app.post('/url/add', async (req, res) => {
   const { URL } = req.body;
     function makeid(length) {
@@ -51,3 +51,4 @@ app.get('/shorturl/:urlkey', async (req, res) => {
     res.status(500).json({ message: 'Error fetching users' });
   }
 });
+*/
