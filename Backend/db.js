@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://abishekitta:urlmongo@cluster0.5i29hlk.mongodb.net/?retryWrites=true&w=majority', {
+
+mongoose.connect('mongodb+srv://abishekitta:urlmongo@cluster.mongodb.net/test?ssl=true&sslCAPath=path/to/ca.pem&sslKeyPath=path/to/key.pem&sslCertPath=path/to/cert.pem', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   //useCreateIndex: true,
