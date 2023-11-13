@@ -1,4 +1,4 @@
-/*const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 //cont uri ='mongodb+srv://abishekitta:urlmongo@cluster0.5i29hlk.mongodb.net/'
 const uri = 'mongodb+srv://abishekitta:urlmongo@cluster0.5i29hlk.mongodb.net/test?ssl=true';
 mongoose.connect(uri, {
@@ -16,9 +16,9 @@ db.once('open', () => {
 
 module.exports = db;
 
-*/
 
 
+/*
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://abishekitta:urlmongo@cluster0.5i29hlk.mongodb.net/?retryWrites=true&w=majority&ssl=true";
 
@@ -45,3 +45,4 @@ async function run() {
 }
 run().catch(console.dir);
 
+*/
