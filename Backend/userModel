@@ -1,0 +1,22 @@
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema({
+  URL: {
+    type: String,
+    required: true,
+    unique: true,
+    /*validate: {
+      validator: (v) => /^[a-zA-Z\s]+$/.test(v),
+      message: 'Full name can only contain letters and spaces',
+    },*/
+  },
+  ShortURL:{
+    type: String,
+    required: true,
+    unique: true,
+  }
+});
+
+const User = mongoose.model('URLdata', userSchema);
+
+module.exports = User;
