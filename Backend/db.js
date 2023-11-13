@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-
-
-mongoose.connect('mongodb+srv://abishekitta:urlmongo@cluster.mongodb.net/test?ssl=true&sslCAPath=path/to/ca.pem&sslKeyPath=path/to/key.pem&sslCertPath=path/to/cert.pem', {
+//cont uri ='mongodb+srv://abishekitta:urlmongo@cluster0.5i29hlk.mongodb.net/'
+const uri = 'mongodb+srv://abishekitta:urlmongo@cluster0.5i29hlk.mongodb.net/test?ssl=true';
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   //useCreateIndex: true,
